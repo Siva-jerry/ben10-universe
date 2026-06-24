@@ -73,7 +73,7 @@ alt=""
 >
 
   <img
-    src={`/src/assets/images/aliens/${selectedAlien.image}`}
+    src={`${import.meta.env.BASE_URL}images/aliens/${selectedAlien.image}`}
     alt={selectedAlien.name}
     className={`showcase-image glow-image-${selectedAlien.id}`}
   />
@@ -131,7 +131,7 @@ alt=""
 >
 
       <img
-        src={`/src/assets/images/aliens/${alien.image}`}
+        src={`${import.meta.env.BASE_URL}images/aliens/${alien.image}`}
         alt={alien.name}
       />
 
