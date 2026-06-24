@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Aliens from "../pages/Aliens";
@@ -11,7 +11,6 @@ import Universe from "../pages/Universe";
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aliens" element={<Aliens />} />
@@ -21,6 +20,5 @@ export default function AppRoutes() {
         <Route path="/encyclopedia" element={<Encyclopedia />} />
         <Route path="/universe" element={<Universe />} />
       </Routes>
-    </BrowserRouter>
   );
 }
