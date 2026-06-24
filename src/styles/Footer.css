@@ -224,3 +224,14 @@
   }
 
 }
+.footer-nav button{
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+  font:inherit;
+}
+
+.footer-nav button:hover{
+  color:#00ff66;
+}

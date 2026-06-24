@@ -8,6 +8,13 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
+  const scrollToSection = (id: string) => {
+  document
+    .getElementById(id)
+    ?.scrollIntoView({
+      behavior: "smooth"
+    });
+};
 
   return (
 
@@ -25,37 +32,37 @@ export default function Footer() {
           "It's Hero Time"
         </p>
 
-        <div className="footer-nav">
+       <div className="footer-nav">
 
-          <a href="#home">
-            Home
-          </a>
+<button onClick={() => scrollToSection("home")}>
+  Home
+</button>
 
-          <a href="#aliens">
-            Aliens
-          </a>
+<button onClick={() => scrollToSection("aliens")}>
+  Aliens
+</button>
 
-          <a href="#allies">
-            Allies
-          </a>
+<button onClick={() => scrollToSection("allies")}>
+  Allies
+</button>
 
-          <a href="#villains">
-            Villains
-          </a>
+<button onClick={() => scrollToSection("villains")}>
+  Villains
+</button>
 
-          <a href="#transformations">
-            Transformations
-          </a>
+<button onClick={() => scrollToSection("transformations")}>
+  Transformations
+</button>
 
-          <a href="#encyclopedia">
-            Encyclopedia
-          </a>
+<button onClick={() => scrollToSection("encyclopedia")}>
+  Encyclopedia
+</button>
 
-          <a href="#universe">
-            Universe Database
-          </a>
+<button onClick={() => scrollToSection("universe")}>
+  Universe Database
+</button>
 
-        </div>
+</div>
 
         <div className="footer-social">
 
