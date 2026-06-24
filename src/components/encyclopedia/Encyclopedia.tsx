@@ -69,11 +69,10 @@ export default function Encyclopedia() {
 
           <div className="database-image">
 
-            <img
-              src={`/src/assets/images/encyclopedia/${selectedEntry.image}`}
-              alt={selectedEntry.title}
-            />
-
+          <img
+  src={`${import.meta.env.BASE_URL}images/encyclopedia/${selectedEntry.image}`}
+  alt={selectedEntry.title}
+/>
           </div>
 
           <span className="database-category">

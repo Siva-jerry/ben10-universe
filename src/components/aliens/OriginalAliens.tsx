@@ -42,9 +42,9 @@ export default function OriginalAliens() {
 >
 
   <img
-    src={`/src/assets/images/original/${selectedAlien.image}`}
-    alt={selectedAlien.name}
-  />
+  src={`${import.meta.env.BASE_URL}images/original/${selectedAlien.image}`}
+  alt={selectedAlien.name}
+/>
 
 </motion.div>
 

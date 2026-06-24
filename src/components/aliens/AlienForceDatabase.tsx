@@ -41,8 +41,8 @@ export default function AlienForceDatabase() {
           }}
         >
 
-          <img
-  src={`/src/assets/images/alien-force/${selectedAlien.image}`}
+ <img
+  src={`${import.meta.env.BASE_URL}images/alien-force/${selectedAlien.image}`}
   alt={selectedAlien.name}
   style={{
     filter: `drop-shadow(0 0 35px ${selectedAlien.glow})`

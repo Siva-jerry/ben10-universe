@@ -30,13 +30,12 @@ export default function VillainsDatabase() {
         >
 
           <img
-            src={`/src/assets/images/villains/${selectedVillain.image}`}
-            alt={selectedVillain.name}
-            style={{
-              filter:
-              `drop-shadow(0 0 30px ${selectedVillain.glow})`
-            }}
-          />
+  src={`${import.meta.env.BASE_URL}images/villains/${selectedVillain.image}`}
+  alt={selectedVillain.name}
+  style={{
+    filter: `drop-shadow(0 0 30px ${selectedVillain.glow})`
+  }}
+/>
 
         </motion.div>
 

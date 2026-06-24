@@ -35,10 +35,10 @@ export default function UltimateAlienDatabase() {
           }}
         >
 
-          <img
-            src={`/src/assets/images/ultimate/${selectedAlien.image}`}
-            alt={selectedAlien.name}
-          />
+         <img
+  src={`${import.meta.env.BASE_URL}images/ultimate/${selectedAlien.image}`}
+  alt={selectedAlien.name}
+/>
 
         </motion.div>
 

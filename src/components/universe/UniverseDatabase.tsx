@@ -90,9 +90,9 @@ export default function UniverseDatabase() {
           <div className="universe-image">
 
             <img
-              src={`/src/assets/images/universe/${selectedLocation.image}`}
-              alt={selectedLocation.name}
-            />
+  src={`${import.meta.env.BASE_URL}images/universe/${selectedLocation.image}`}
+  alt={selectedLocation.name}
+/>
 
           </div>
 

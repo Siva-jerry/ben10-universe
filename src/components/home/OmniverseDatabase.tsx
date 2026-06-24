@@ -36,13 +36,12 @@ return (
     >
 
       <img
-        src={`/src/assets/images/omniverse/${selectedAlien.image}`}
-        alt={selectedAlien.name}
-        style={{
-          filter:
-          `drop-shadow(0 0 30px ${selectedAlien.glow})`
-        }}
-      />
+  src={`${import.meta.env.BASE_URL}images/omniverse/${selectedAlien.image}`}
+  alt={selectedAlien.name}
+  style={{
+    filter: `drop-shadow(0 0 30px ${selectedAlien.glow})`
+  }}
+/>
 
     </motion.div>
 

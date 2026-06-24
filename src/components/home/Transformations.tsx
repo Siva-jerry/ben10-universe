@@ -107,17 +107,17 @@ export default function Transformations() {
           >
 
             <img
-              src={
-                alien.era === "Classic"
-                ? `/src/assets/images/original/${alien.image}`
-                : alien.era === "Alien Force"
-                ? `/src/assets/images/alien-force/${alien.image}`
-                : alien.era === "Ultimate"
-                ? `/src/assets/images/ultimate/${alien.image}`
-                : `/src/assets/images/omniverse/${alien.image}`
-              }
-              alt={alien.name}
-            />
+  src={
+    alien.era === "Classic"
+      ? `${import.meta.env.BASE_URL}images/original/${alien.image}`
+      : alien.era === "Alien Force"
+      ? `${import.meta.env.BASE_URL}images/alien-force/${alien.image}`
+      : alien.era === "Ultimate"
+      ? `${import.meta.env.BASE_URL}images/ultimate/${alien.image}`
+      : `${import.meta.env.BASE_URL}images/omniverse/${alien.image}`
+  }
+  alt={alien.name}
+/>
 
             <h3>
               {alien.name}
@@ -167,19 +167,17 @@ export default function Transformations() {
             </button>
 
             <img
-              src={
-                selectedAlien.era === "Classic"
-                ? `/src/assets/images/original/${selectedAlien.image}`
-                : selectedAlien.era === "Alien Force"
-                ? `/src/assets/images/alien-force/${selectedAlien.image}`
-                : selectedAlien.era === "Ultimate"
-                ? `/src/assets/images/ultimate/${selectedAlien.image}`
-                : `/src/assets/images/omniverse/${selectedAlien.image}`
-              }
-              alt={
-                selectedAlien.name
-              }
-            />
+  src={
+    selectedAlien.era === "Classic"
+      ? `${import.meta.env.BASE_URL}images/original/${selectedAlien.image}`
+      : selectedAlien.era === "Alien Force"
+      ? `${import.meta.env.BASE_URL}images/alien-force/${selectedAlien.image}`
+      : selectedAlien.era === "Ultimate"
+      ? `${import.meta.env.BASE_URL}images/ultimate/${selectedAlien.image}`
+      : `${import.meta.env.BASE_URL}images/omniverse/${selectedAlien.image}`
+  }
+  alt={selectedAlien.name}
+/>
 
             <h2>
               {selectedAlien.name}

@@ -35,13 +35,13 @@ export default function AlliesDatabase() {
           }}
         >
 
-          <img
-            src={`/src/assets/images/allies/${selectedAlly.image}`}
-            alt={selectedAlly.name}
-            style={{
-              filter:`drop-shadow(0 0 30px ${selectedAlly.glow})`
-            }}
-          />
+         <img
+  src={`${import.meta.env.BASE_URL}images/allies/${selectedAlly.image}`}
+  alt={selectedAlly.name}
+  style={{
+    filter: `drop-shadow(0 0 30px ${selectedAlly.glow})`
+  }}
+/>
 
         </motion.div>
 
