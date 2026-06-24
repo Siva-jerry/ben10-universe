@@ -6,8 +6,16 @@ import App from "./App";
 import "./styles/globals.css";
 import "./styles/theme.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+import { HashRouter } from "react-router-dom";
+
+ReactDOM.createRoot(
+  document.getElementById("root")!
+).render(
   <React.StrictMode>
-    <App />
+
+    <HashRouter>
+      <App />
+    </HashRouter>
+
   </React.StrictMode>
 );
