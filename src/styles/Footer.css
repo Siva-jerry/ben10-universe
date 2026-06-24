@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&display=swap');
+
+.ben-footer{
+
+  position:relative;
+
+  padding:120px 20px 50px;
+
+  background:
+  linear-gradient(
+  180deg,
+  #050505,
+  #000000
+  );
+
+  overflow:hidden;
+
+  text-align:center;
+}
+
+/* Glow */
+
+.footer-glow{
+
+  position:absolute;
+
+  width:700px;
+  height:700px;
+
+  background:
+  radial-gradient(
+  circle,
+  rgba(0,255,102,.15),
+  transparent 70%
+  );
+
+  top:50%;
+  left:50%;
+
+  transform:
+  translate(-50%,-50%);
+
+  pointer-events:none;
+}
+
+/* Content */
+
+.footer-content{
+
+  position:relative;
+  z-index:2;
+}
+
+/* Logo */
+
+.footer-logo{
+
+  font-family:
+  'Orbitron',
+  sans-serif;
+
+  font-size:4.5rem;
+
+  color:white;
+
+  letter-spacing:6px;
+
+  margin-bottom:15px;
+
+  text-shadow:
+  0 0 25px #00ff66,
+  0 0 45px #00ff66;
+}
+
+/* Tagline */
+
+.footer-tagline{
+
+  color:#bdbdbd;
+
+  font-size:1.2rem;
+
+  margin-bottom:40px;
+}
+
+/* Navigation */
+
+.footer-nav{
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:25px;
+
+  margin-bottom:50px;
+}
+
+.footer-nav a{
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:1rem;
+
+  transition:.3s;
+}
+
+.footer-nav a:hover{
+
+  color:#00ff66;
+
+  transform:
+  translateY(-2px);
+}
+
+/* Social */
+
+.footer-social{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:25px;
+
+  margin-bottom:50px;
+}
+
+.footer-social a{
+
+  width:55px;
+  height:55px;
+
+  display:flex;
+
+  justify-content:center;
+  align-items:center;
+
+  border-radius:50%;
+
+  color:white;
+
+  font-size:1.4rem;
+
+  background:
+  rgba(255,255,255,.05);
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  transition:.3s;
+}
+
+.footer-social a:hover{
+
+  color:#00ff66;
+
+  border-color:#00ff66;
+
+  transform:
+  translateY(-5px);
+
+  box-shadow:
+  0 0 20px rgba(0,255,102,.4);
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+  border-top:
+  1px solid rgba(255,255,255,.08);
+
+  padding-top:30px;
+}
+
+.footer-bottom h3{
+
+  color:white;
+
+  font-size:1rem;
+
+  letter-spacing:3px;
+
+  margin-bottom:12px;
+}
+
+.footer-bottom p{
+
+  color:#888;
+
+  font-size:.95rem;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .footer-logo{
+
+    font-size:2.5rem;
+  }
+
+  .footer-nav{
+
+    gap:15px;
+  }
+
+  .footer-social{
+
+    gap:15px;
+  }
+
+  .footer-social a{
+
+    width:45px;
+    height:45px;
+
+    font-size:1.1rem;
+  }
+
+}

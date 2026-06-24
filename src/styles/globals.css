@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Audiowide&display=swap');
+
+:root{
+  --heading-font:'Orbitron',sans-serif;
+  --nav-font:'Rajdhani',sans-serif;
+  --body-font:'Inter',sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+
+  font-family:var(--body-font);
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+ul{
+  list-style:none;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  position:relative;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  overflow:hidden;
+}
+
+.hero-content{
+  z-index:10;
+}
+
+.hero-title{
+  font-family:var(--heading-font);
+
+  font-size:7rem;
+
+  color:#00ff66;
+
+  text-shadow:
+  0 0 10px #00ff66,
+  0 0 20px #00ff66,
+  0 0 40px #00ff66;
+}
+
+.hero-subtitle{
+  font-family:var(--body-font);
+
+  font-size:1.5rem;
+
+  color:#ccc;
+
+  margin-top:20px;
+}
+
+.hero::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background-image:
+  radial-gradient(#00ff66 1px, transparent 1px);
+
+  background-size:40px 40px;
+
+  opacity:.15;
+}
+
+/* Buttons */
+
+.btn-primary{
+  padding:15px 30px;
+
+  border:none;
+
+  background:#00ff66;
+
+  color:black;
+
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+.btn-secondary{
+  padding:15px 30px;
+
+  border:1px solid #00ff66;
+
+  background:transparent;
+
+  color:#00ff66;
+
+  cursor:pointer;
+}

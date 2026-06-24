@@ -1,0 +1,190 @@
+.allies-database{
+  padding:120px 5%;
+  background:#070b14;
+}
+
+.allies-title{
+  text-align:center;
+  font-size:4rem;
+
+  font-family:'Audiowide',sans-serif;
+
+  letter-spacing:6px;
+
+  color:white;
+
+  text-shadow:
+  0 0 10px #00c8ff,
+  0 0 20px #00c8ff;
+  
+
+  margin-bottom:120px; /* increase space */
+}
+
+.allies-screen{
+  display:grid;
+  grid-template-columns:
+  350px
+  1fr
+  300px;
+
+  gap:40px;
+
+  padding:40px;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  background:rgba(255,255,255,.03);
+
+  backdrop-filter:blur(20px);
+
+  border-radius:30px;
+}
+
+.ally-image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.ally-image img{
+  width:100%;
+  max-width:280px;
+}
+
+.ally-alert{
+  color:#00c8ff;
+  letter-spacing:3px;
+  font-size:.8rem;
+  margin-bottom:10px;
+}
+
+.ally-content h2{
+  font-family:'Orbitron',sans-serif;
+  font-size:4rem;
+  font-weight:800;
+
+  letter-spacing:3px;
+
+  color:white;
+
+  text-shadow:
+  0 0 10px rgba(255,255,255,.3);
+}
+
+.ally-role,
+.ally-species{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1.3rem;
+  font-weight:700;
+
+  letter-spacing:1px;
+}
+
+.ally-divider{
+  width:140px;
+  height:3px;
+  background:#00c8ff;
+  margin:25px 0;
+}
+
+.ally-description{
+  color:#d0d0d0;
+  line-height:2;
+}
+
+.ally-stats{
+  padding:25px;
+  border-radius:20px;
+  background:rgba(255,255,255,.03);
+}
+
+.ally-stats h3{
+  font-family:'Orbitron',sans-serif;
+
+  letter-spacing:2px;
+
+  color:#00c8ff;
+}
+
+.ally-stat{
+  margin-bottom:20px;
+}
+
+.ally-stat-top{
+  font-family:'Rajdhani',sans-serif;
+
+  font-size:1rem;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+}
+
+.ally-bar{
+  height:12px;
+  background:#1b2230;
+  border-radius:30px;
+  overflow:hidden;
+}
+
+.ally-fill{
+  height:100%;
+  border-radius:30px;
+}
+
+.allies-selector{
+  margin-top:35px;
+
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+
+  justify-content:center;
+}
+
+.ally-btn{
+  border:1px solid rgba(255,255,255,.08);
+
+  padding:14px 26px;
+
+  border-radius:14px;
+
+  background:#111827;
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  font-family:'Orbitron',sans-serif;
+
+  font-size:.8rem;
+
+  letter-spacing:1px;
+
+  font-weight:700;
+}
+
+.ally-btn:hover{
+  transform:translateY(-3px);
+}
+
+.active{
+  color:black;
+  font-weight:700;
+}
+
+@media(max-width:1100px){
+
+  .allies-screen{
+    grid-template-columns:1fr;
+  }
+
+  .ally-content h2{
+    font-size:3rem;
+  }
+
+}

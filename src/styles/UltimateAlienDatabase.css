@@ -1,0 +1,236 @@
+.ultimate-database{
+  padding:120px 6%;
+  background:#050505;
+  position:relative;
+  overflow:hidden;
+}
+
+.ultimate-database::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:#ff3300;
+  filter:blur(250px);
+  opacity:.08;
+  left:-300px;
+  top:100px;
+}
+
+.ultimate-title{
+  text-align:center;
+  font-size:4rem;
+  color:white;
+  margin-bottom:70px;
+  letter-spacing:6px;
+}
+
+.ultimate-screen{
+
+  display:grid;
+
+  grid-template-columns:
+  420px 1fr 300px;
+
+  gap:50px;
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(255,80,0,.15);
+
+  border-radius:30px;
+
+  padding:40px;
+}
+
+.ultimate-image{
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.ultimate-image img{
+
+  width:100%;
+  max-width:320px;
+
+  filter:
+  drop-shadow(
+  0 0 25px #ff5500);
+}
+
+.mutation-alert{
+
+  color:#ff5500;
+
+  letter-spacing:4px;
+
+  margin-bottom:15px;
+}
+
+.ultimate-content h2{
+
+  font-size:4rem;
+
+  color:white;
+
+  margin-bottom:20px;
+}
+
+.ultimate-species,
+.ultimate-planet{
+
+  color:#ff8844;
+
+  margin-bottom:10px;
+}
+
+.ultimate-divider{
+
+  width:120px;
+
+  height:2px;
+
+  background:#ff5500;
+
+  margin:25px 0;
+}
+
+.ultimate-description{
+
+  color:#d5d5d5;
+
+  line-height:2;
+}
+
+.evolution-panel{
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(255,80,0,.15);
+
+  border-radius:20px;
+
+  padding:25px;
+}
+
+.evolution-panel h3{
+
+  color:white;
+
+  margin-bottom:25px;
+}
+
+.ultimate-stat{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  color:white;
+
+  margin-bottom:8px;
+}
+
+.ultimate-bar{
+
+  height:12px;
+
+  background:#111;
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  margin-bottom:20px;
+}
+
+.ultimate-fill{
+
+  height:100%;
+}
+
+.power{
+
+  background:#ff3300;
+}
+
+.speed{
+
+  background:#ffaa00;
+}
+
+.intelligence{
+
+  background:#00ccff;
+}
+
+.durability{
+
+  background:#ff00aa;
+}
+
+.ultimate-selector{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:15px;
+
+  margin-top:35px;
+
+  justify-content:center;
+}
+
+.ultimate-btn{
+
+  background:
+  rgba(255,255,255,.05);
+
+  border:
+  1px solid rgba(255,255,255,.1);
+
+  color:white;
+
+  padding:12px 22px;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.ultimate-btn:hover{
+
+  border-color:#ff5500;
+}
+
+.ultimate-btn.active{
+
+  background:#ff5500;
+
+  color:white;
+
+  box-shadow:
+  0 0 20px #ff5500;
+}
+
+@media(max-width:1200px){
+
+  .ultimate-screen{
+
+    grid-template-columns:1fr;
+  }
+
+  .ultimate-content h2{
+
+    font-size:2.8rem;
+  }
+}

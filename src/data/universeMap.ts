@@ -1,0 +1,122 @@
+export const universeMap = [
+  {
+    id: 1,
+    name: "Earth",
+    type: "Planet",
+    image: "earth.webp",
+    danger: "Low to Medium",
+    ruler: "Human Governments",
+    population: "8 Billion",
+    x: "50%",
+    y: "40%",
+    description: "Earth is the central vibrant focal point of the franchise and the homeworld of Ben Tennyson, Gwen, and Kevin. While originally considered a low-tech, backward planet by the rest of the galaxy, it secretly serves as a major hub for Plumber activity and alien refugees. The planet is frequently targeted by warlords, mutant scientists, and cosmic entities seeking to claim the Omnitrix or enslave humanity. Despite lacking native galactic technology, its human defenders have repeatedly saved the universe from total destruction. It balances ordinary, everyday city life with hidden underground alien markets and high-tech defense bases."
+  },
+  {
+    id: 2,
+    name: "Galvan Prime",
+    type: "Planet",
+    image: "galvan_prime.png",
+    danger: "Low",
+    ruler: "The First Thinker (Azmuth)",
+    population: "12 Billion",
+    x: "70%",
+    y: "15%",
+    description: "Galvan Prime is the highly advanced, technologically supreme home planet of the hyper-intelligent, small amphibian species known as the Galvans. It stands as a universal beacon of knowledge, housing massive laboratory facilities, boundless scientific archives, and the legendary workshop of Azmuth. The planet features ultra-modern cities with towering metallic architecture that blends seamlessly with manicured, high-tech ecosystems. Because of its massive database of breakthrough innovations, it is frequently targeted by deep-space warlords looking to steal weapon schematics. The world is heavily protected by orbit-defense grids, automated security drones, and specialized Galvanic Mechamorph screens."
+  },
+  {
+    id: 3,
+    name: "Primus",
+    type: "Planet",
+    image: "primus.webp",
+    danger: "Medium",
+    ruler: "Azmuth (Codon Stream Guardian)",
+    population: "Artificial Intelligences Only",
+    x: "80%",
+    y: "25%",
+    description: "Primus is a highly classified, organic-mechanical planet engineered by Azmuth to act as the primary backup server for the Omnitrix. The entire planet functions as a massive living computer system that contains the Codon Stream, a vast river of liquid DNA representing every intelligent species in the galaxy. This critical DNA stream is pumped directly throughout the planet's core, wirelessly transmitting transformation data to the Omnitrix wherever Ben travels. To protect this invaluable genetic database from falling into malicious hands, the planet remains completely hidden from standard planetary maps. It features a dangerous, automated defense matrix and aggressive biomechanical flora that will violently neutralize any unauthorized trespassers."
+  },
+  {
+    id: 4,
+    name: "Petropia",
+    type: "Planet",
+    image: "petropia.png",
+    danger: "Medium",
+    ruler: "Sugilite / Petrosapien Council",
+    population: "5 Billion",
+    x: "85%",
+    y: "45%",
+    description: "Petropia is a stunning, subterranean world composed entirely of gleaming crystal matrix formations and the homeworld of Diamondhead's species. The planet was tragically shattered into dust by the warlord Vilgax, leaving its crystalline population extinct for several years. However, Ben utilized the mystical crystal guardian Sugilite and the power of Chromastone to fully restore the planet and resurrect its people from the dead. Its newly formed surface features massive spires of unbreakable emerald crystal that channel natural planetary light into beautiful underground cities. The inhabitants live in a highly structured society deeply connected to the planet's unique geological frequencies and crystalline magic."
+  },
+  {
+    id: 5,
+    name: "Khoros",
+    type: "Planet",
+    image: "khoros.webp",
+    danger: "High",
+    ruler: "Warlord Gar / Tetramand Royals",
+    population: "15 Billion",
+    x: "30%",
+    y: "20%",
+    description: "Khoros is a harsh, arid desert world characterized by brutal sandstorms, ancient coliseums, and the homeworld of Four Arms' species, the Tetramands. The planet's unforgiving climate has shaped its population into a proud, muscular warrior race that values physical strength and combat skill above all else. Society on Khoros is ruled by powerful warlords who settle political disputes through intense hand-to-hand arena gladiatorial matches. The barren landscape is littered with heavy industrial mining outposts, ancient ruins, and dangerous native desert beasts that hunt unwary travelers. Visitors must constantly prove their combat strength or carry heavy artillery simply to survive the planet's aggressive cultural laws."
+  },
+  {
+    id: 6,
+    name: "Pisciss",
+    type: "Planet",
+    image: "pisciss.webp",
+    danger: "High",
+    ruler: "Pisciss Aquatic Monarchy",
+    population: "9 Billion",
+    x: "65%",
+    y: "55%",
+    description: "Pisciss is a unique, breathtaking ocean planet composed almost entirely of water held together by a massive gravitational core multiplier at its center. It serves as the homeworld for Ripjaws' species, housing a diverse ecosystem of bioluminescent marine life and massive underwater kingdoms. The planet lacks any solid landmasses, forcing inhabitants to build floating coral cities or deep-trench habitats designed to withstand immense hydrostatic pressure. At the absolute center of the planet lies the Gravitational Stabilizer, a hyper-advanced piece of ancient technology that prevents the planet's water from scattering into deep space. Due to the presence of giant, terrifying sea predators, navigating the deep waters requires advanced marine combat armor."
+  },
+  {
+    id: 7,
+    name: "Ledgerdomain",
+    type: "Magic Realm",
+    image: "ledgerdomain.webp",
+    danger: "Extreme",
+    ruler: "Charmcaster (Current Sovereign)",
+    population: "Magical Beings & Stone Entities",
+    x: "40%",
+    y: "80%",
+    description: "Ledgerdomain is a mystical, extra-dimensional realm that serves as the core birthplace and sovereign source of all magical mana in existence. The dimension features a surreal landscape composed of massive floating stone islands, glowing purple skies, and wild elemental vortexes. The physical laws of the normal universe do not apply here, allowing spellcasters to reshape topography and manipulate gravity effortlessly. It is populated by ancient stone entities, magical beasts, and dark sorcerers who constantly battle for total dominion over the realm's core power. Controlling Ledgerdomain grants a wizard near-limitless magical energy, making it a constant war zone for powerful dark mystics."
+  },
+  {
+    id: 8,
+    name: "Null Void",
+    type: "Dimension",
+    image: "null_void.jpg",
+    danger: "Extreme",
+    ruler: "None (Anarchic Criminal Factions)",
+    population: "Millions of Convicts",
+    x: "55%",
+    y: "65%",
+    description: "The Null Void is a harsh, pocket dimension utilized by the Plumbers as an inescapable, intergalactic penal colony for the universe's most dangerous criminals. It is a desolate wasteland filled with floating rocky red platforms, unstable atmospheric rifts, and violent plasma storms. With no formal civilization, the dimension has devolved into a brutal survival playground where dangerous alien convict factions wage endless war over scarce scrap resources. It is also home to terrifying native predators, such as the flying Null Guardians, who hunt down anyone attempting to navigate the spatial void. Breaking out of the Null Void is nearly impossible without a specialized directional projector key."
+  },
+  {
+    id: 9,
+    name: "Anur System",
+    type: "Planetary System",
+    image: "anur_system.webp",
+    danger: "Extreme",
+    ruler: "Zs'Skayr (High King of Anur)",
+    population: "Unknown",
+    x: "20%",
+    y: "35%",
+    description: "The Anur System is a terrifying, shadow-shrouded planetary system that serves as the home coordinates for Ghostfreak, Blitzwolfer, and Whampire's species. Severed from conventional galactic stellar light, the entire cluster of worlds exists in permanent dark cosmic isolation, which heavily amplifies dark energy. The surfaces of these worlds are composed of corrupting corrodium mineral deposits that mutate ordinary biological tissue upon direct exposure. The system operates under a gothic feudal dark monarchy, populated by phantom entities, reanimated mummies, and high-tier scientific vampires. It is widely considered a forbidden zone by the Plumbers due to the extreme psychological horror and ghostly presence that infects the system."
+  },
+  {
+    id: 10,
+    name: "Forge of Creation",
+    type: "Dimension Nexus",
+    image: "forge_of_creation.webp",
+    danger: "Unknown (Impenetrable)",
+    ruler: "The Celestialsapiens",
+    population: "Unknown",
+    x: "10%",
+    y: "90%",
+    description: "The Forge of Creation is a hidden, multi-dimensional nexus point that serves as the birthplace of the god-like, reality-warping Celestialsapiens (Alien X). Located deep within a spatial anomaly completely severed from the normal flow of time and space, it is surrounded by an impenetrable cosmic nebula barrier. The forge resembles a vast cosmic cradle containing giant, translucent newborn star fields where young Celestialsapiens slowly take form. Because the entity profiles inside can rewrite the space-time continuum with a single thought, its exact coordinates are kept a strict secret. It represents the absolute pinnacle of cosmic creation, untouched by mortal wars or technological development."
+  }
+];

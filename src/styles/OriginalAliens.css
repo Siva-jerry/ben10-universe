@@ -1,0 +1,224 @@
+.original-aliens{
+  position:relative;
+  padding:120px 6%;
+  background:#050505;
+  overflow:hidden;
+}
+
+/* Green Glows */
+
+.original-aliens::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:#00ff66;
+  border-radius:50%;
+  filter:blur(220px);
+  opacity:.08;
+  left:-350px;
+  top:200px;
+}
+
+.original-aliens::after{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:#00ff66;
+  border-radius:50%;
+  filter:blur(220px);
+  opacity:.08;
+  right:-350px;
+  bottom:200px;
+}
+
+/* Title */
+
+.database-title{
+  text-align:center;
+  color:white;
+  font-size:4rem;
+  margin-bottom:80px;
+  letter-spacing:6px;
+}
+
+/* MAIN FRAME */
+
+.alien-screen{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:70px;
+  align-items:center;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid rgba(0,255,102,.15);
+
+  border-radius:24px;
+
+  padding:50px;
+
+  position:relative;
+
+  overflow:visible;
+
+  backdrop-filter:blur(12px);
+}
+
+/* HUD Border */
+
+.alien-screen::before{
+  content:"";
+  position:absolute;
+  inset:15px;
+  border:1px solid rgba(0,255,102,.15);
+  border-radius:18px;
+  pointer-events:none;
+}
+
+/* DNA Text */
+
+.alien-screen::after{
+  content:"DNA SCAN ACTIVE";
+  position:absolute;
+  top:20px;
+  right:25px;
+  color:#00ff66;
+  letter-spacing:3px;
+  font-size:.75rem;
+}
+
+/* Image */
+
+.original-image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.original-image img{
+  width:100%;
+  max-width:320px;
+  object-fit:contain;
+
+  filter:
+  drop-shadow(0 0 25px rgba(0,255,102,.3));
+}
+
+/* Content */
+
+.original-content{
+    width:100%;
+  max-width:700px;
+}
+
+.original-name{
+  color:white;
+  font-size:4rem;
+  letter-spacing:4px;
+  margin-bottom:20px;
+}
+
+.original-species,
+.original-planet{
+  color:#00ff66;
+  font-size:1.05rem;
+  margin-bottom:10px;
+}
+
+.original-divider{
+  width:120px;
+  height:2px;
+  background:#00ff66;
+  margin:25px 0;
+}
+
+/* Typewriter Text */
+
+.original-content span{
+  display:block;
+  color:#d8d8d8;
+  line-height:2;
+  font-size:1.05rem;
+}
+
+/* Buttons Area */
+
+.original-selector{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+    margin-top:50px;
+  padding-top:15px;
+  padding-bottom:25px;
+}
+
+/* Premium Buttons */
+
+.original-btn{
+  min-width:140px;
+
+  background:
+  rgba(255,255,255,.05);
+
+  border:
+  1px solid rgba(255,255,255,.1);
+
+  color:white;
+
+  padding:12px 22px;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  transition:.35s;
+
+  backdrop-filter:blur(10px);
+
+  font-weight:600;
+}
+
+.original-btn:hover{
+  transform:translateY(-3px);
+  border-color:#00ff66;
+}
+
+.original-btn.active{
+
+  background:
+  rgba(0,255,102,.15);
+
+  color:#00ff66;
+
+  border:1px solid #00ff66;
+
+  box-shadow:
+  inset 0 0 15px rgba(0,255,102,.25),
+  0 0 20px rgba(0,255,102,.35);
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+  .alien-screen{
+  display:grid;
+  grid-template-columns:350px 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+  .original-name{
+    font-size:2.5rem;
+  }
+
+  .original-image img{
+    max-width:250px;
+  }
+
+  .original-divider{
+    margin:20px auto;
+  }
+}

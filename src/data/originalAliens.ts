@@ -1,0 +1,122 @@
+export const originalAliens = [
+  {
+    id: 1,
+    name: "Heatblast",
+    image: "heatblast-full.jpg",
+    species: "Pyronite",
+    planet: "Pyros",
+    power: "85%",
+speed: "60%",
+intelligence: "65%",
+durability: "70%",
+    description: "Heatblast is one of Ben's first and most iconic transformations. As a Pyronite, he can generate and control intense fire, launch fireballs, and even fly using flame propulsion. His body is composed of living magma, making him resistant to heat and dangerous in combat. Heatblast often relies on powerful ranged attacks to defeat enemies."
+  },
+  {
+    id: 2,
+    name: "Wildmutt",
+    image: "wildmutt-full.jpg",
+    species: "Vulpimancer",
+    planet: "Vulpin",
+     power: "65%",
+speed: "75%",
+intelligence: "30%",
+durability: "60%",
+    description: "Wildmutt is a beast-like alien who lacks eyes, navigating instead through highly advanced senses of smell and hearing. As a Vulpimancer, he possesses incredible agility, sharp claws, and powerful jaws. His predatory instincts make him an excellent tracker and a fierce hand-to-hand combatant."
+  },
+  {
+    id: 3,
+    name: "Diamondhead",
+    image: "diamondhead-full.jpg",
+    species: "Petrosapien",
+    planet: "Petropia",
+     power: "80%",
+speed: "55%",
+intelligence: "70%",
+durability: "95%",
+    description: "Diamondhead is a crystalline alien made of dense, organic emerald-like crystal. He can manipulate his body structure to generate sharp weapons, shield himself from incoming attacks, and fire crystal shards at high velocities. His durable composition grants him immense physical resilience."
+  },
+  {
+    id: 4,
+    name: "XLR8",
+    image: "xlr8-full.jpg",
+    species: "Kineceleran",
+    planet: "Kinet",
+     power: "45%",
+speed: "100%",
+intelligence: "70%",
+durability: "40%",
+    description: "XLR8 is a sleek, dinosaur-like alien built for extreme speed. By manipulating friction and using the wheeled orbs on his feet, he can run fast enough to scale walls, sprint across water, and move faster than the human eye can track. He utilizes momentum and rapid-fire strikes to overwhelm targets."
+  },
+  {
+    id: 5,
+    name: "Grey Matter",
+    image: "grey_matter-full.jpg",
+    species: "Galvan",
+    planet: "Galvan Prime",
+     power: "5%",
+speed: "35%",
+intelligence: "100%",
+durability: "15%",
+    description: "Grey Matter is a tiny, frog-like alien who sacrifices physical power for unparalleled intellect. As a Galvan, he possesses a deep understanding of complex machinery, electronics, and scientific theory. His small size allows him to infiltrate tight spaces and sabotage or repair systems from within."
+  },
+  {
+    id: 6,
+    name: "Four Arms",
+    image: "four_arms-full.jpg",
+    species: "Tetramand",
+    planet: "Khoros",
+     power: "95%",
+speed: "50%",
+intelligence: "50%",
+durability: "85%",
+    description: "Four Arms is a massive, red-skinned powerhouse equipped with four highly muscular arms. He is Ben's primary choice for raw physical confrontation, capable of lifting immense weight, creating shockwaves by clapping his hands, and enduring heavy blunt force impacts."
+  },
+  {
+    id: 7,
+    name: "Stinkfly",
+    image: "stinkfly-full.jpg",
+    species: "Lepidopterran",
+    planet: "Lepdidopterra",
+     power: "60%",
+speed: "80%",
+intelligence: "60%",
+durability: "45%",
+    description: "Stinkfly is an insectoid alien equipped with four multi-directional eyes and large wings that grant him exceptional aerial agility. He can spit highly flammable, foul-smelling slime from his eyes and mouth to bind or blind enemies, and he features a sharp, blade-like stinger on his tail."
+  },
+  {
+    id: 8,
+    name: "Ripjaws",
+    image: "ripjaws-full.jpg",
+    species: "Piscciss Volann",
+    planet: "Piscciss",
+     power: "70%",
+speed: "75%",
+intelligence: "60%",
+durability: "55%",
+    description: "Ripjaws is an aquatic alien sharing traits with predatory sea life. He features a massive, unhingable jaw lined with razor-sharp teeth capable of ripping through solid metal, and a tail that transforms into fins for underwater propulsion. He requires water to avoid severe dehydration."
+  },
+  {
+    id: 9,
+    name: "Upgrade",
+    image: "upgrade-full.jpg",
+    species: "Galvanic Mechamorph",
+    planet: "Galvan B",
+     power: "80%",
+speed: "65%",
+intelligence: "85%",
+durability: "75%",
+    description: "Upgrade is a biomechanical lifeform made of liquid metal and nanites. He has the unique capability to merge with, control, and technologically enhance any mechanical device he touches. While bonded, he can reshape the technology into advanced weaponry and fire plasma blasts from his optic eye."
+  },
+  {
+    id: 10,
+    name: "Ghostfreak",
+    image: "ghostfreak-full.jpg",
+    species: "Ectonurite",
+    planet: "Anur Phaetos",
+     power: "75%",
+speed: "70%",
+intelligence: "80%",
+durability: "85%",
+    description: "Ghostfreak is a phantom-like alien with a creepy, unsettling presence. As an Ectonurite, he can turn completely invisible and phase through solid objects. He also possesses the ability to possess living beings, control minds, and reveal a terrifying mass of tentacles from beneath his protective outer skin."
+  }
+];

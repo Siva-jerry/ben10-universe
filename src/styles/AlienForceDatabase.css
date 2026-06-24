@@ -1,0 +1,292 @@
+.alien-force-database{
+
+  padding:140px 6%;
+
+  background:#050505;
+
+  position:relative;
+}
+
+.af-title{
+
+  text-align:center;
+
+  color:white;
+
+  font-size:4rem;
+
+  letter-spacing:5px;
+
+  margin-bottom:80px;
+}
+
+/* SCREEN */
+
+.af-screen{
+
+  display:grid;
+
+  grid-template-columns:
+  320px 1fr 280px;
+
+  gap:50px;
+
+  align-items:center;
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(0,255,102,.15);
+
+  border-radius:25px;
+
+  padding:45px;
+
+  backdrop-filter:blur(12px);
+}
+
+/* IMAGE */
+
+.af-image{
+
+  display:flex;
+
+  justify-content:center;
+}
+
+.af-image img{
+
+  width:100%;
+
+  max-width:260px;
+
+  object-fit:contain;
+
+  filter:
+  drop-shadow(
+  0 0 25px
+  rgba(0,255,102,.4)
+  );
+}
+
+/* CONTENT */
+
+.af-content h2{
+
+  color:white;
+
+  font-size:4rem;
+
+  margin-bottom:15px;
+}
+
+.af-species,
+.af-planet{
+
+  color:#00ff66;
+
+  margin-bottom:10px;
+}
+
+.af-divider{
+
+  width:120px;
+
+  height:2px;
+
+  background:#00ff66;
+
+  margin:25px 0;
+}
+
+.af-content span{
+
+  color:#d6d6d6;
+
+  line-height:2;
+}
+
+/* STATS */
+
+.af-stats{
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(0,255,102,.1);
+
+  border-radius:20px;
+
+  padding:25px;
+}
+
+.af-stats h3{
+
+  color:white;
+
+  margin-bottom:25px;
+}
+
+.stat{
+
+  margin-bottom:18px;
+}
+
+.stat span{
+
+  display:flex;
+
+  justify-content:
+  space-between;
+
+  color:white;
+
+  margin-bottom:10px;
+
+  font-size:.85rem;
+
+  letter-spacing:1px;
+}
+
+.bar{
+
+  height:16px;
+
+  background:
+  rgba(255,255,255,.08);
+
+  border-radius:999px;
+
+  overflow:hidden;
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  position:relative;
+}
+
+.fill{
+
+  height:100%;
+
+  border-radius:999px;
+
+  position:relative;
+
+  background:
+  linear-gradient(
+    90deg,
+    #00ff66,
+    #66ffff
+  );
+}
+
+.fill::after{
+
+  content:"";
+
+  position:absolute;
+
+  right:0;
+  top:0;
+
+  width:20px;
+  height:100%;
+
+  background:white;
+
+  filter:blur(8px);
+
+  opacity:.8;
+}
+/* BUTTONS */
+
+.af-selector{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fill,minmax(140px,1fr));
+
+  gap:15px;
+
+  margin-top:40px;
+}
+
+.af-btn{
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:
+  rgba(255,255,255,.05);
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  font-weight:600;
+}
+
+.af-btn:hover{
+
+  transform:
+  translateY(-3px);
+
+  border:
+  1px solid #00ff66;
+}
+
+.af-btn.active{
+
+  color:black;
+
+  font-weight:700;
+
+  transform:translateY(-3px);
+
+  border:2px solid transparent;
+}
+.af-btn.active::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:inherit;
+
+  filter:blur(20px);
+
+  opacity: 0.2;;
+
+  z-index:-1;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+  .af-screen{
+
+    grid-template-columns:1fr;
+  }
+
+  .af-content{
+
+    text-align:center;
+  }
+
+  .af-divider{
+
+    margin:20px auto;
+  }
+}

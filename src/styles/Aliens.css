@@ -1,0 +1,157 @@
+.alien-hero{
+  position:relative;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  overflow:hidden;
+
+  background:
+  radial-gradient(
+  circle at center,
+  rgba(0,255,102,.12),
+  #050505 60%);
+}
+
+.alien-hero-overlay{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+  to bottom,
+  rgba(0,0,0,.2),
+  rgba(0,0,0,.8));
+}
+
+.alien-hero-content{
+  position:relative;
+  z-index:2;
+
+  max-width:900px;
+}
+
+.alien-hero-tag{
+  color:#00ff66;
+
+  letter-spacing:6px;
+
+  margin-bottom:20px;
+
+  font-size:.9rem;
+}
+
+.alien-hero-title{
+  color:white;
+
+  font-size:6rem;
+
+  font-weight:900;
+
+  margin-bottom:20px;
+}
+
+.alien-hero-description{
+  color:#cfcfcf;
+
+  line-height:1.8;
+
+  font-size:1.2rem;
+
+  max-width:700px;
+
+  margin:auto;
+}
+
+.alien-hero-stats{
+  display:flex;
+
+  justify-content:center;
+
+  gap:50px;
+
+  margin-top:60px;
+}
+
+.hero-stat h3{
+  color:#00ff66;
+
+  font-size:2rem;
+
+  margin-bottom:10px;
+}
+
+.hero-stat span{
+  color:white;
+}
+
+.dna-ring{
+  position:absolute;
+
+  border:2px solid
+  rgba(0,255,102,.15);
+
+  border-radius:50%;
+}
+
+.ring-1{
+  width:350px;
+  height:350px;
+
+  animation:spin 20s linear infinite;
+}
+
+.ring-2{
+  width:550px;
+  height:550px;
+
+  animation:spinReverse 30s linear infinite;
+}
+
+.ring-3{
+  width:750px;
+  height:750px;
+
+  animation:spin 40s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spinReverse{
+  from{
+    transform:rotate(360deg);
+  }
+
+  to{
+    transform:rotate(0deg);
+  }
+}
+
+@media(max-width:768px){
+
+  .alien-hero-title{
+    font-size:3rem;
+  }
+
+  .alien-hero-stats{
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .alien-hero-description{
+    font-size:1rem;
+    padding:0 20px;
+  }
+}

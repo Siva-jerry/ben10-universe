@@ -1,0 +1,499 @@
+.featured-aliens{
+
+  position:relative;
+
+  padding:120px 8%;
+
+  background:#050505;
+
+  overflow:hidden;
+}
+.featured-aliens::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:500px;
+  height:500px;
+
+  left:-250px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  background:#00ff66;
+
+  border-radius:50%;
+
+  filter:blur(180px);
+
+  opacity:.14;
+}
+
+.featured-aliens::after{
+
+  content:"";
+
+  position:absolute;
+
+  width:500px;
+  height:500px;
+
+  right:-250px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  background:#00ff66;
+
+  border-radius:50%;
+
+  filter:blur(180px);
+
+  opacity:.14;
+}
+
+.featured-header{
+
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.featured-tag{
+
+  color:#00ff66;
+  letter-spacing:4px;
+  margin-bottom:10px;
+}
+
+.featured-title{
+
+  color:white;
+  font-size:4rem;
+}
+
+.alien-showcase{
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:80px;
+
+  align-items:center;
+}
+
+.alien-image-section{
+
+  display:flex;
+  justify-content:center;
+}
+
+.showcase-image{
+
+  max-width:450px;
+  max-height:500px;
+
+  object-fit:contain;
+
+  transition:.4s;
+
+  animation:
+  alienFloat 4s ease-in-out infinite;
+}
+@keyframes alienFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-15px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+.alien-info{
+
+  animation:fadeIn .5s ease;
+}
+
+.alien-info h2{
+
+  font-size:4rem;
+  color:white;
+
+  margin-bottom:20px;
+}
+
+.species,
+.planet{
+
+  color:#00ff66;
+
+  margin-bottom:10px;
+}
+
+.alien-info h3{
+
+  color:white;
+
+  margin-top:30px;
+  margin-bottom:20px;
+}
+
+.alien-info ul{
+
+  padding-left:20px;
+}
+
+.alien-info li{
+
+  color:#d4d4d4;
+  margin-bottom:10px;
+}
+
+.alien-selector{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fill,minmax(140px,1fr));
+
+  gap:20px;
+
+  margin-top:80px;
+}
+.alien-card{
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  border-radius:18px;
+
+  padding:15px;
+
+  text-align:center;
+
+  cursor:pointer;
+
+  transition:.35s;
+
+  backdrop-filter:blur(10px);
+}
+
+.alien-card img{
+
+  width:80px;
+  height:80px;
+
+  object-fit:contain;
+
+  margin-bottom:10px;
+}
+
+.alien-card h4{
+
+  color:white;
+
+  font-size:.9rem;
+}
+
+.alien-card:hover{
+
+  transform:
+  translateY(-5px);
+}
+
+.alien-btn{
+
+  background:#111;
+
+  border:1px solid #222;
+
+  color:white;
+
+  padding:12px 20px;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  white-space:nowrap;
+}
+
+.alien-btn:hover{
+
+  border-color:#00ff66;
+}
+
+.alien-btn.active{
+
+  background:#00ff66;
+  color:black;
+
+  font-weight:700;
+}
+
+@keyframes fadeIn{
+
+  from{
+
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(max-width:768px){
+
+  .alien-showcase{
+
+    grid-template-columns:1fr;
+  }
+
+  .alien-info{
+
+    text-align:center;
+  }
+
+  .featured-title{
+
+    font-size:2.5rem;
+  }
+
+  .alien-info h2{
+
+    font-size:2.5rem;
+  }
+}
+.featured-omnitrix{
+
+  position:absolute;
+
+  opacity:.08;
+
+  pointer-events:none;
+
+  z-index:0;
+
+  animation:floatOmni 8s ease-in-out infinite;
+}
+
+.omnitrix-a{
+
+  width:140px;
+
+  top:100px;
+  left:5%;
+}
+
+.omnitrix-b{
+
+  width:180px;
+
+  top:500px;
+  right:10%;
+}
+
+.omnitrix-c{
+
+  width:130px;
+
+  bottom:30px;
+  left:30%;
+}
+
+@keyframes floatOmni{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+.glow-1.active{
+box-shadow:0 0 25px #00ffff;
+}
+
+.glow-2.active{
+box-shadow:0 0 25px #ffd700;
+}
+
+.glow-3.active{
+box-shadow:0 0 25px #ffffff;
+}
+
+.glow-4.active{
+box-shadow:0 0 25px #00ff66;
+}
+
+.glow-5.active{
+box-shadow:0 0 25px #ff6600;
+}
+
+.glow-6.active{
+box-shadow:0 0 25px #ff0066;
+}
+
+.glow-7.active{
+box-shadow:0 0 25px #00ccff;
+}
+
+.glow-8.active{
+box-shadow:0 0 25px #6699ff;
+}
+
+.glow-9.active{
+box-shadow:0 0 25px #e6d3a3;
+}
+
+.glow-10.active{
+box-shadow:0 0 25px #ff99ff;
+}
+
+.glow-11.active{
+box-shadow:0 0 25px #00ff99;
+}
+
+.glow-12.active{
+box-shadow:0 0 25px #66ffcc;
+}
+
+.glow-13.active{
+box-shadow:0 0 25px #99ff00;
+}
+
+.glow-14.active{
+box-shadow:0 0 25px #ffffff;
+}
+
+.glow-15.active{
+box-shadow:0 0 25px #3399ff;
+}
+
+.glow-16.active{
+box-shadow:0 0 25px #00ff66;
+}
+
+.glow-17.active{
+box-shadow:0 0 25px #ffcc00;
+}
+
+.glow-18.active{
+box-shadow:0 0 25px #f2ff00;
+}
+
+.glow-19.active{
+box-shadow:0 0 25px #ff8c00;
+}
+
+.glow-20.active{
+box-shadow:0 0 25px #ffd700;
+}
+
+.glow-21.active{
+box-shadow:0 0 25px #66ccff;
+}
+.glow-image-1{
+  filter:drop-shadow(0 0 35px #00ffff);
+}
+
+.glow-image-2{
+  filter:drop-shadow(0 0 35px #ffd700);
+}
+
+.glow-image-3{
+  filter:drop-shadow(0 0 35px #ffffff);
+}
+
+.glow-image-4{
+  filter:drop-shadow(0 0 35px #00ff66);
+}
+
+.glow-image-5{
+  filter:drop-shadow(0 0 35px #ff6600);
+}
+
+.glow-image-6{
+  filter:drop-shadow(0 0 35px #ff0066);
+}
+
+.glow-image-7{
+  filter:drop-shadow(0 0 35px #00ccff);
+}
+
+.glow-image-8{
+  filter:drop-shadow(0 0 35px #6699ff);
+}
+
+.glow-image-9{
+  filter:drop-shadow(0 0 35px #e6d3a3);
+}
+
+.glow-image-10{
+  filter:drop-shadow(0 0 35px #ff99ff);
+}
+
+.glow-image-11{
+  filter:drop-shadow(0 0 35px #00ff99);
+}
+
+.glow-image-12{
+  filter:drop-shadow(0 0 35px #66ffcc);
+}
+
+.glow-image-13{
+  filter:drop-shadow(0 0 35px #99ff00);
+}
+
+.glow-image-14{
+  filter:drop-shadow(0 0 35px #ffffff);
+}
+
+.glow-image-15{
+  filter:drop-shadow(0 0 35px #3399ff);
+}
+
+.glow-image-16{
+  filter:drop-shadow(0 0 35px #00ff66);
+}
+
+.glow-image-17{
+  filter:drop-shadow(0 0 35px #ffcc00);
+}
+
+.glow-image-18{
+  filter:drop-shadow(0 0 35px #d9ff00);
+}
+
+.glow-image-19{
+  filter:drop-shadow(0 0 35px #ff6f00);
+}
+
+.glow-image-20{
+  filter:drop-shadow(0 0 35px #ffd700);
+}
+
+.glow-image-21{
+  filter:drop-shadow(0 0 35px #66ccff);
+}

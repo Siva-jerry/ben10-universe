@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&display=swap');
+
+.encyclopedia-section{
+  min-height:100vh;
+  padding:120px 6%;
+  background:#050505;
+  position:relative;
+}
+
+.encyclopedia-section::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+
+  background:#00d9ff;
+
+  border-radius:50%;
+
+  filter:blur(220px);
+
+  opacity:.08;
+
+  top:-250px;
+  right:-250px;
+}
+
+.encyclopedia-title{
+
+  text-align:center;
+
+  font-size:4rem;
+
+  color:#00d9ff;
+
+  font-family:'Orbitron',sans-serif;
+
+  letter-spacing:6px;
+
+  margin-bottom:70px;
+
+  text-shadow:
+  0 0 20px rgba(0,217,255,.7);
+}
+
+/* MAIN TERMINAL */
+
+.archive-terminal{
+
+  display:grid;
+
+  grid-template-columns:
+  280px 1fr;
+
+  gap:40px;
+}
+
+/* LEFT PANEL */
+
+.database-sidebar{
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(0,217,255,.15);
+
+  border-radius:20px;
+
+  padding:25px;
+
+  height:fit-content;
+
+  backdrop-filter:blur(15px);
+}
+
+.database-header{
+
+  color:#00d9ff;
+
+  font-family:'Orbitron',sans-serif;
+
+  margin-bottom:25px;
+
+  letter-spacing:3px;
+
+  text-align:center;
+}
+
+.database-btn{
+
+  width:100%;
+
+  padding:14px;
+
+  margin-bottom:12px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+  rgba(255,255,255,.04);
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.database-btn:hover{
+
+  transform:translateX(5px);
+
+  border:1px solid #00d9ff;
+}
+
+.database-btn.active{
+
+  background:
+  rgba(0,217,255,.15);
+
+  color:#00d9ff;
+
+  border:1px solid #00d9ff;
+
+  box-shadow:
+  0 0 15px rgba(0,217,255,.4);
+}
+
+/* RIGHT PANEL */
+
+.database-content{
+
+  background:
+  rgba(255,255,255,.03);
+
+  border:
+  1px solid rgba(0,217,255,.15);
+
+  border-radius:25px;
+
+  padding:50px;
+
+  backdrop-filter:blur(15px);
+}
+
+.database-image{
+
+  text-align:center;
+
+  margin-bottom:30px;
+}
+
+.database-image img{
+
+  width:100%;
+
+  max-width:450px;
+
+  object-fit:contain;
+
+  filter:
+  drop-shadow(
+  0 0 25px rgba(0,217,255,.4)
+  );
+}
+
+.database-category{
+
+  display:inline-block;
+
+  background:
+  rgba(0,217,255,.15);
+
+  color:#00d9ff;
+
+  padding:8px 18px;
+
+  border-radius:25px;
+
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.database-content h2{
+
+  color:white;
+
+  font-size:3rem;
+
+  font-family:'Orbitron',sans-serif;
+
+  margin-bottom:20px;
+}
+
+.database-divider{
+
+  width:120px;
+
+  height:2px;
+
+  background:#00d9ff;
+
+  margin-bottom:25px;
+}
+
+.database-content p{
+
+  color:#d8d8d8;
+
+  line-height:2;
+
+  font-size:1.05rem;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .archive-terminal{
+
+    grid-template-columns:1fr;
+  }
+
+  .encyclopedia-title{
+
+    font-size:2.5rem;
+  }
+
+  .database-content h2{
+
+    font-size:2rem;
+  }
+
+  .database-image img{
+
+    max-width:280px;
+  }
+}
