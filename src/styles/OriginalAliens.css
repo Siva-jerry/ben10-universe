@@ -47,7 +47,7 @@
 
 .alien-screen{
   display:grid;
-  grid-template-columns:420px 1fr;
+  grid-template-columns:minmax(280px,420px) 1fr;
   gap:70px;
   align-items:center;
 
