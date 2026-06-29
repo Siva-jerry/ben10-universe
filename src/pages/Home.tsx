@@ -13,7 +13,9 @@ import Transformations from "../components/home/Transformations";
 import Encyclopedia
 from "../components/encyclopedia/Encyclopedia";
 import UniverseDatabase from "../components/universe/UniverseDatabase";
+import WatchCenter from "../components/watch/WatchCenter";
 import Footer from "../components/common/Footer";
+
 
 import "../styles/Home.css";
 
@@ -295,6 +297,7 @@ className="about-description"
   <Transformations/>
   <Encyclopedia/>
   <UniverseDatabase/>
+  <WatchCenter/>
   <Footer/>
 </>
 

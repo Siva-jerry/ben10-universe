@@ -103,6 +103,11 @@ const toggleMusic = () => {
         >
           Universe Database
         </button>
+        <button
+  onClick={() => scrollToSection("watch")}
+>
+  Watch
+</button>
 
         <button
           className="music-btn"

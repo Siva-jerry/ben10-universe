@@ -61,6 +61,9 @@ export default function Footer() {
 <button onClick={() => scrollToSection("universe")}>
   Universe Database
 </button>
+<button onClick={() => scrollToSection("watch")}>
+  Watch
+</button>
 
 </div>
 
